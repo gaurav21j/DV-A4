@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title of Page -->
+		<title>India | Trade Data Exploration</title>
+		
+		<!-- Meta Data -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Dhruvit Joshi, Gaurav Joshi">
+		<meta name="description" content="Gajanand Marbles, International Granites and Marbles.">
+		<meta name="keywords" content="Gajanand, Marbles, Granites">
+		<meta name="referrer" content="origin">
+		
+		<!-- Favicon -->
+		<link rel="icon" href="gaj2.png">
+		
+		<!-- Linked Plugins -->
+		<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="animatescroll.js"></script>
+				
+		<!-- Linked CSS files -->
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="bootstrapcss.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- Linked Fonts -->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400'>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:300'>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		
+		<script>
+			//Initialize reveal object
+			window.sr = ScrollReveal();
+				
+			//Add sr as class if it is supported by browser
+			if (sr.isSupported()) {
+				document.documentElement.classList.add('sr');
+			}
+		</script>
+		
+		<style>
+
+p, h2{
+				font-family:Lato; margin-left:5%; margin-right:5%; text-align: justify;
+				font-size: 120%;
+			}	
+			html, body { height: 100%; width: 100%; margin: 0; 
+				background-color:#fff;
+				left: 5%;
+			}
+
+			.xyz {
+				font-size: 125%;
+				color: white;
+				font-family: Lato;
+				padding-top: 50px;
+			}
+		@media (max-width: 1000px) {
+			.navbar-header {
+				float: none;
+				margin-top:5px;
+			}
+			.navbar-left,.navbar-right {
+				float: none !important;
+			}
+			.navbar-toggle {
+				display: block;
+			}
+			.navbar-collapse {
+				border-top: 1px solid transparent;
+				box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+			}
+			.navbar-fixed-top {
+				top: 0;
+				border-width: 0 0 1px;
+			}
+			.navbar-collapse.collapse {
+				display: none!important;
+			}
+			.navbar-nav {
+				float: none!important;
+				margin-top: 7.5px;
+			}
+			.navbar-nav>li {
+				float: none;
+			}
+			.navbar-nav>li>a {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.collapse.in{
+				display:block !important;
+			}
+		}
+		</style>
+		
+		<script>
+			$(document).ready(function(){
+				$(".button").click(function(){
+					$(".collapse").collapse('toggle');
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div id="outer" class="container-fluid">
+		
+			<!--Navbar Large-->
+			<nav id="navlarge" class="navbar navbar-inverse navbar-fixed-top w3-hide-small w3-hide-medium w3-card-4" style="background-color:#202020;">
+				<div class="container-fluid">
+					<!--Icon-->
+					<div class="navbar-header" style="margin-top: 5px;">
+						<a class="navbar-brand" href="index.html"><span class="xyz" style="margin-top: 5%;">India | Trade Data Exploration</span></a>
+						<!--<a class="navbar-brand" href="#section3"><h2 style="font-family:Montserrat;margin-top:-0.1%;display:inline-block;color:#fff;">GAJANAND MARBLES</h2></a>-->
+					</div>
+					
+				</div>
+			</nav>		
+			
+			<!--Div Elements Large-->
+			<!--Home Page-->
+			<div id="section1" class="w3-hide-small w3-hide-medium" style="width:100%;">
+				<div style="background-color:#fff;margin-top:0px;">
+				<div class="w3-center">
+				
+				</div>
+				</div>
+				<div style="width:100%;margin-top:5%;margin-bottom:2%;">
+					<h3 class="w3-xxlarge w3-center" style="font-family:Montserrat;text-align: center; font-size: 220%; color:#202020;">&lt;<span style="color: #007acc;">India</span> | <span style="color: #00cc00;"> Trade Data Exploration</span>></h3>
+					<p style="font-family:Montserrat;text-align:center;color:#202020; font-size:120%;">Trade statistics of India for export and import of commodities from 2010-2018</p>
+				</div>
+
+				<div>
+					<p>India is one of the fastest developing nations of the world and trade between nations is the major component of any developing nation. This dataset includes the trade data for India for commodities in the HS2 basket. The dataset consists of trade values for export and import of commodities in million US$. The dataset is tidy and each row consists of a single observation.</p>
+					<p style="font-family:Montserrat;color:#202020; font-size:200%;">Questions We'll Be Adressing</p>
+					<p>The dataset consists of trade values for export and import of commodities in million US$. The dataset is tidy and each row consists of a single observation. Some of the pressing questions we plan on answering via data visualization techniques are mentioned below</p>
+				<p>1. What did India export the most in any given year?<br> 
+				2. Which commodity forms a major chunk of trade? Does it conform to theories of international trade?<br> 
+				3. How has the trade between India and any given country grown over time?</p>
+			
+				<p style="font-family:Montserrat;color:#202020; font-size:200%;">Charts Covered</p>
+				<p><span class="text-blue"><a href="index_bar.html" style="cursor: pointer;" id="link1">Bar Chart Analysis</a><br></span></p>
+				<p><span class="text-blue"><a href="index_bar_trade_deficit.html" style="cursor: pointer;" id="link1">Trade Deficit Analysis</a><br></span></p>
+				<p><span class="text-blue"><a href="index_sunburst.html" style="cursor: pointer;" id="link1">Sunburst Analysis</a><br></span></p>
+				<p><span class="text-blue"><a href="index_treemap.html" style="cursor: pointer;" id="link1">Treemap Analysis</a><br></span></p>
+			</div>
+			
+				
+			</div>
+	</body>
+</html>

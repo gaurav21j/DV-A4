@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+		<!-- Favicon -->
+		<link rel="icon" href="gaj2.png">
+		
+		<!-- Linked Plugins -->
+		<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="animatescroll.js"></script>
+				
+		<!-- Linked CSS files -->
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="bootstrapcss.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- Linked Fonts -->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400'>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:300'>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		
+<style>
+  /* set the CSS */
+
+  .bar {
+    fill: steelblue;
+  }
+</style>
+<style>
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  p, h2{
+				font-family:Lato; margin-left:5%; margin-right:5%; text-align: justify;
+				font-size: 120%;
+			}	
+			html, body { height: 100%; width: 100%; margin: 0; 
+        background-color:#fff;
+        left: 5%;
+			}
+</style>
+
+<body>
+
+  <!-- load the d3.js library -->
+  <script src="d3/d3.v4.min.js"></script>
+
+  <div style="margin-bottom: 5%;">
+      <!--Navbar Large-->
+<nav id="navlarge" class="navbar navbar-inverse navbar-fixed-top w3-hide-small w3-hide-medium w3-card-4" style="background-color:#202020;">
+    <div class="container-fluid">
+      <!--Icon-->
+      <div class="navbar-header" style="margin-top: 5px;">
+        <a class="navbar-brand" href="index.html"><span class="xyz" style="margin-top: 5%;">India | Trade Data Exploration</span></a>
+        <!--<a class="navbar-brand" href="#section3"><h2 style="font-family:Montserrat;margin-top:-0.1%;display:inline-block;color:#fff;">GAJANAND MARBLES</h2></a>-->
+      </div>
+      
+    </div>
+  </nav>
+</div>
+
+  <div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.</p>
+    <input type="text" id="num" name="num">
+    <button class="button" onclick="hello()">Submit</button>
+    <div class="custom-select" style="width:200px;">
+      <select id="file">
+        <option id="file" value="0">Select Bar Graph:</option>
+        <option id="file" value="1">Top N-Imports</option>
+        <option id="file" value="2">Top N-Exports</option>
+        <option id="file" value="3">Bottom N-Imports</option>
+        <option id="file" value="4">Bottom N-Exports</option>
+      </select>
+    </div>
+
+
+  </div>
+  <div>
+
+    <script>
+      function hello() {
+
+        var file = document.getElementById('file').value;
+        console.log(file);
+        var list = document.getElementsByTagName("svg");
+        if (list.length !== 0) {
+          var element = document.getElementsByTagName("svg"), index;
+
+          for (index = element.length - 1; index >= 0; index--) {
+            element[index].parentNode.removeChild(element[index]);
+          }
+        }
+
+        var num = document.getElementById('num').value;
+        // set the dimensions and margins of the graph
+        var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+          width = 960 - margin.left - margin.right,
+          height = 500 - margin.top - margin.bottom;
+
+        // set the ranges
+        var x = d3.scaleBand()
+          .range([0, width])
+          .padding(0.1);
+        var y = d3.scaleLinear()
+          .range([height, 0]);
+
+        // append the svg object to the body of the page
+        // append a 'group' element to 'svg'
+        // moves the 'group' element to the top left margin
+        var svg = d3.select("body").append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+          .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+        var tooltip = d3.select("body").append("div").attr("class", "toolTip");
+
+
+        // get the data
+        if (file == 1) {
+          var file = 'dataset/top-imports.csv';
+        } else if (file == 2) {
+          var file = 'dataset/top-exports.csv';
+        } else if (file == 3) {
+          var file = 'dataset/bottom-imports.csv';
+        } else if (file == 4) {
+          var file = 'dataset/bottom-exports.csv';
+        } else {
+
+        }
+
+
+        d3.csv(file, function (error, data) {
+          if (error) throw error;
+
+          data = data.splice(0, num)
+
+          // format the data
+          data.forEach(function (d) {
+            d.total_imports = +d.total_imports;
+          });
+
+          // Scale the range of the data in the domains
+          x.domain(data.map(function (d) { return d.country; }));
+          y.domain([0, d3.max(data, function (d) { return d.total_imports; })]);
+
+
+
+
+          // append the rectangles for the bar chart
+          svg.selectAll(".bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function (d) { return x(d.country); })
+            .attr("width", x.bandwidth())
+            .attr("y", function (d) { return y(d.total_imports); })
+            .attr("height", function (d) { return height - y(d.total_imports); })
+            .on("mousemove", function (d) {
+              tooltip
+                .style("left", d3.event.pageX - 50 + "px")
+                .style("top", d3.event.pageY - 70 + "px")
+                .style("display", "inline-block")
+                .html((d.country) + "<br>" + "$" + (d.total_imports));
+            })
+            .on("mouseout", function (d) { tooltip.style("display", "none"); });
+
+
+          // add the x Axis
+          var gXAxis = svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x))
+            .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", "-.55em")
+            .attr("transform", "rotate(-65)");
+
+
+          // add the y Axis
+          svg.append("g")
+            .call(d3.axisLeft(y));
+
+        });
+
+      }
+    </script>
+    <script>
+
+
+
+    </script>
+  </div>
+</body>

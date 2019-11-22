@@ -1,0 +1,282 @@
+<head>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+		<!-- Favicon -->
+		<link rel="icon" href="gaj2.png">
+		
+		<!-- Linked Plugins -->
+		<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="animatescroll.js"></script>
+				
+		<!-- Linked CSS files -->
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="bootstrapcss.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- Linked Fonts -->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400'>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:300'>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		
+    <style>
+        body {
+            font-family: Sans-serif;
+            font-size: 15px;
+        }
+
+        .slice {
+            cursor: pointer;
+        }
+
+        .slice .main-arc {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+
+        .slice .hidden-arc {
+            fill: none;
+        }
+
+        .slice text {
+            pointer-events: none;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+    </style>
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        p, h2{
+				font-family:Lato; margin-left:5%; margin-right:5%; text-align: justify;
+				font-size: 120%;
+			}	
+			html, body { height: 100%; width: 100%; margin: 0; 
+                background-color:#fff;
+                left: 5%;
+			}
+    </style>
+
+
+    <script src='d3/d3.v4.min.js'></script>
+</head>
+
+<body>
+
+        <div style="margin-bottom: 5%;">
+                <!--Navbar Large-->
+          <nav id="navlarge" class="navbar navbar-inverse navbar-fixed-top w3-hide-small w3-hide-medium w3-card-4" style="background-color:#202020;">
+              <div class="container-fluid">
+                <!--Icon-->
+                <div class="navbar-header" style="margin-top: 5px;">
+                  <a class="navbar-brand" href="index.html"><span class="xyz" style="margin-top: 5%;">India | Trade Data Exploration</span></a>
+                  <!--<a class="navbar-brand" href="#section3"><h2 style="font-family:Montserrat;margin-top:-0.1%;display:inline-block;color:#fff;">GAJANAND MARBLES</h2></a>-->
+                </div>
+                
+              </div>
+            </nav>
+  </div>
+
+    <div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <button class="button" onclick="hello()">Submit</button>
+        <div class="custom-select" style="width:200px;">
+            <select id="file">
+                <option id="file" value="0">Select Bar Graph:</option>
+                <option id="file" value="1">Most Exported Commodity Over Years</option>
+                <option id="file" value="2">Most Imported Commodity Over Years</option>
+            </select>
+        </div>
+
+
+    </div>
+    <div>
+
+        <script>
+
+            function hello() {
+                
+                var file = document.getElementById('file').value;
+                if(file == 1){
+                    var filepath = 'dataset/export-4.json';
+                } else if(file == 2) {
+                    var filepath = 'dataset/import-4.json';
+                }
+
+                var list = document.getElementsByTagName("svg");
+        if (list.length !== 0) {
+          var element = document.getElementsByTagName("svg"), index;
+
+          for (index = element.length - 1; index >= 0; index--) {
+            element[index].parentNode.removeChild(element[index]);
+          }
+        }
+
+
+                const width = window.innerWidth,
+                    height = window.innerHeight,
+                    maxRadius = (Math.min(width, height) / 2) - 6;
+
+                const formatNumber = d3.format(',d');
+
+                const x = d3.scaleLinear()
+                    .range([0, 2 * Math.PI])
+                    .clamp(true);
+
+                const y = d3.scaleSqrt()
+                    .range([maxRadius * .1, maxRadius]);
+
+                const color = d3.scaleOrdinal(d3.schemeCategory20);
+
+                const partition = d3.partition();
+
+                const arc = d3.arc()
+                    .startAngle(d => x(d.x0))
+                    .endAngle(d => x(d.x1))
+                    .innerRadius(d => Math.max(0, y(d.y0)))
+                    .outerRadius(d => Math.max(0, y(d.y1)));
+
+                const middleArcLine = d => {
+                    const halfPi = Math.PI / 2;
+                    const angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];
+                    const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+
+                    const middleAngle = (angles[1] + angles[0]) / 2;
+                    const invertDirection = middleAngle > 0 && middleAngle < Math.PI; // On lower quadrants write text ccw
+                    if (invertDirection) { angles.reverse(); }
+
+                    const path = d3.path();
+                    path.arc(0, 0, r, angles[0], angles[1], invertDirection);
+                    return path.toString();
+                };
+
+                const textFits = d => {
+                    const CHAR_SPACE = 6;
+
+                    const deltaAngle = x(d.x1) - x(d.x0);
+                    const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+                    const perimeter = r * deltaAngle;
+
+                    return d.data.name.length * CHAR_SPACE < perimeter;
+                };
+
+                const svg = d3.select('body').append('svg')
+                    .style('width', '100vw')
+                    .style('height', '100vh')
+                    .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
+                    .on('click', () => focusOn()); // Reset zoom on canvas click
+
+                d3.json(filepath, (error, root) => {
+                    if (error) throw error;
+
+                    root = d3.hierarchy(root);
+                    root.sum(d => d.size);
+
+                    const slice = svg.selectAll('g.slice')
+                        .data(partition(root).descendants());
+
+                    slice.exit().remove();
+
+                    const newSlice = slice.enter()
+                        .append('g').attr('class', 'slice')
+                        .on('click', d => {
+                            d3.event.stopPropagation();
+                            focusOn(d);
+                        });
+
+                    newSlice.append('title')
+                        .text(d => d.data.name + '\n' + formatNumber(d.value));
+
+                    newSlice.append('path')
+                        .attr('class', 'main-arc')
+                        .style('fill', d => color((d.children ? d : d.parent).data.name))
+                        .attr('d', arc);
+
+                    newSlice.append('path')
+                        .attr('class', 'hidden-arc')
+                        .attr('id', (_, i) => `hiddenArc${i}`)
+                        .attr('d', middleArcLine);
+
+                    const text = newSlice.append('text')
+                        .attr('display', d => textFits(d) ? null : 'none');
+
+                    // Add white contour
+                    text.append('textPath')
+                        .attr('startOffset', '50%')
+                        .attr('xlink:href', (_, i) => `#hiddenArc${i}`)
+                        .text(d => d.data.name)
+                        .style('fill', 'none')
+                        .style('stroke', '#fff')
+                        .style('stroke-width', 5)
+                        .style('stroke-linejoin', 'round');
+
+                    text.append('textPath')
+                        .attr('startOffset', '50%')
+                        .attr('xlink:href', (_, i) => `#hiddenArc${i}`)
+                        .text(d => d.data.name);
+                });
+
+                function focusOn(d = { x0: 0, x1: 1, y0: 0, y1: 1 }) {
+                    // Reset to top-level if no data point specified
+
+                    const transition = svg.transition()
+                        .duration(750)
+                        .tween('scale', () => {
+                            const xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                                yd = d3.interpolate(y.domain(), [d.y0, 1]);
+                            return t => { x.domain(xd(t)); y.domain(yd(t)); };
+                        });
+
+                    transition.selectAll('path.main-arc')
+                        .attrTween('d', d => () => arc(d));
+
+                    transition.selectAll('path.hidden-arc')
+                        .attrTween('d', d => () => middleArcLine(d));
+
+                    transition.selectAll('text')
+                        .attrTween('display', d => () => textFits(d) ? null : 'none');
+
+                    moveStackToFront(d);
+
+                    //
+
+                    function moveStackToFront(elD) {
+                        svg.selectAll('.slice').filter(d => d === elD)
+                            .each(function (d) {
+                                this.parentNode.appendChild(this);
+                                if (d.parent) { moveStackToFront(d.parent); }
+                            })
+                    }
+                }
+            }
+        </script>
+</body>

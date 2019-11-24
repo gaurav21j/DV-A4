@@ -1,15 +1,15 @@
 {"name": "India", "children": [
-        {"name": 2018, "children": [
+        {"name": "2018", "children": [
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 47.92023
                 },
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 40.44905
                 },
                 {
-                    "name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF.",
+                    "name": "NUCLEAR REACTORS",
                     "size": 20.96332
                 },
                 {
@@ -18,112 +18,112 @@
                 }
             ]
         },
-        {"name": 2017, "children": [
+        {"name": "2017", "children": [
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 41.74333
                 },
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 38.46931
                 },
                 {
-                    "name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF.",
+                    "name": "NUCLEAR REACTORS",
                     "size": 17.86565
                 },
                 {
-                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF.",
+                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK",
                     "size": 17.25508
                 }
             ]
         },
-        {"name": 2016, "children": [
+        {"name": "2016", "children": [
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 43.62303
                 },
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 32.43554
                 },
                 {
-                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF.",
+                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK",
                     "size": 14.94979
                 },
                 {
-                    "name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF.",
+                    "name": "NUCLEAR REACTORS",
                     "size": 14.09878
                 }
             ]
         },
-        {"name": 2015, "children": [
+        {"name": "2015", "children": [
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 39.55382
                 },
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 31.23147
                 },
                 {
-                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF.",
+                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK",
                     "size": 14.35573
                 },
                 {
-                    "name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF.",
+                    "name": "NUCLEAR REACTORS",
                     "size": 13.51672
                 }
             ]
         },
-        {"name": 2014, "children": [
+        {"name": "2014", "children": [
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 57.61994
                 },
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 41.54959
                 },
                 {
-                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF.",
+                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK",
                     "size": 14.47364
                 },
                 {
-                    "name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF.",
+                    "name": "NUCLEAR REACTORS",
                     "size": 13.80101
                 }
             ]
         },
-        {"name": 2013, "children": [
+        {"name": "2013", "children": [
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 64.68528
                 },
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 41.6921
                 },
                 {
-                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF.",
+                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK",
                     "size": 12.93275
                 },
                 {
-                    "name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF.",
+                    "name": "NUCLEAR REACTORS",
                     "size": 12.07539
                 }
             ]
         },
-        {"name": 2012, "children": [
+        {"name": "2012", "children": [
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 62.10538
                 },
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 43.76829
                 },
                 {
-                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF.",
+                    "name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK",
                     "size": 12.19308
                 },
                 {
@@ -132,13 +132,13 @@
                 }
             ]
         },
-        {"name": 2011, "children": [
+        {"name": "2011", "children": [
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 57.3918
                 },
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 47.27776
                 },
                 {
@@ -151,13 +151,13 @@
                 }
             ]
         },
-        {"name": 2010, "children": [
+        {"name": "2010", "children": [
                 {
-                    "name": "NATURAL OR CULTURED PEARLS,PRECIOUS OR SEMIPRECIOUS STONES,PRE.METALS,CLAD WITH PRE.METAL AND ARTCLS THEREOF;IMIT.JEWLRY;COIN.",
+                    "name": "NATURAL OR CULTURED PEARLS",
                     "size": 43.68489
                 },
                 {
-                    "name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.",
+                    "name": "MINERAL FUELS",
                     "size": 42.73586
                 },
                 {

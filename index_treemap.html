@@ -298,7 +298,7 @@ Generic treemap, based on http://bost.ocks.org/mike/treemap/
           .attr("class", "child")
           .call(rect)
           .append("title")
-          .text(function (d) { return d.key + " (" + formatNumber(d.value) + ")"; });
+          .text(function (d) { return d.key + " (" + formatNumber(Math.floor(d.value)) + ")"; });
         children.append("text")
           .attr("class", "ctext")
           .text(function (d) { return d.key; })
@@ -316,7 +316,7 @@ Generic treemap, based on http://bost.ocks.org/mike/treemap/
           .text(function (d) { return d.key; });
         t.append("tspan")
           .attr("dy", "1.0em")
-          .text(function (d) { return formatNumber(d.value); });
+          .text(function (d) { return formatNumber(Math.floor(d.value)); });
         t.call(text);
 
         g.selectAll("rect")
@@ -383,9 +383,10 @@ Generic treemap, based on http://bost.ocks.org/mike/treemap/
       }
 
       function name(d) {
+        console.log(formatNumber(Math.floor(d.value)))
         return d.parent
-          ? name(d.parent) + " / " + d.key + " (" + formatNumber(d.value) + ")"
-          : d.key + " (" + formatNumber(d.value) + ")";
+          ? name(d.parent) + " / " + d.key + " (" + formatNumber(Math.floor(d.value)) + ")"
+          : d.key + " (" + formatNumber(Math.floor(d.value)) + ")";
       }
     }
 

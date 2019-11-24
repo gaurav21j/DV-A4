@@ -1,0 +1,866 @@
+[
+    {
+        "key": "U ARAB EMTS",
+        "region": 2018,
+        "subregion": "MINERAL FUELS",
+        "value": 6367
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2018,
+        "subregion": "MINERAL FUELS",
+        "value": 5877
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2018,
+        "subregion": "MINERAL FUELS",
+        "value": 4364
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2018,
+        "subregion": "MINERAL FUELS",
+        "value": 2855
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2018,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140
+    },
+    {
+        "key": "U S A",
+        "region": 2018,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2018,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2018,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2018,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2018,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2018,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2018,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2018,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2018,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2018,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2018,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2017,
+        "subregion": "MINERAL FUELS",
+        "value": 6367.54
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2017,
+        "subregion": "MINERAL FUELS",
+        "value": 5877.28
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2017,
+        "subregion": "MINERAL FUELS",
+        "value": 4364.22
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2017,
+        "subregion": "MINERAL FUELS",
+        "value": 2855.69
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2017,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140.21
+    },
+    {
+        "key": "U S A",
+        "region": 2017,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2017,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2017,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2017,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2017,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2017,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2017,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2017,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2017,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2017,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2017,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2016,
+        "subregion": "MINERAL FUELS",
+        "value": 6367.54
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2016,
+        "subregion": "MINERAL FUELS",
+        "value": 5877.28
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2016,
+        "subregion": "MINERAL FUELS",
+        "value": 4364.22
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2016,
+        "subregion": "MINERAL FUELS",
+        "value": 2855.69
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2016,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140.21
+    },
+    {
+        "key": "U S A",
+        "region": 2016,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2016,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2016,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2016,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2016,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2016,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2016,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2016,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2016,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2016,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2016,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2015,
+        "subregion": "MINERAL FUELS",
+        "value": 6367.54
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2015,
+        "subregion": "MINERAL FUELS",
+        "value": 5877.28
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2015,
+        "subregion": "MINERAL FUELS",
+        "value": 4364.22
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2015,
+        "subregion": "MINERAL FUELS",
+        "value": 2855.69
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2015,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140.21
+    },
+    {
+        "key": "U S A",
+        "region": 2015,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2015,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2015,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2015,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2015,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2015,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2015,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2015,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2015,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2015,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2015,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2014,
+        "subregion": "MINERAL FUELS",
+        "value": 6367.54
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2014,
+        "subregion": "MINERAL FUELS",
+        "value": 5877.28
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2014,
+        "subregion": "MINERAL FUELS",
+        "value": 4364.22
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2014,
+        "subregion": "MINERAL FUELS",
+        "value": 2855.69
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2014,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140.21
+    },
+    {
+        "key": "U S A",
+        "region": 2014,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2014,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2014,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2014,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2014,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2014,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2014,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2014,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2014,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2014,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2014,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2013,
+        "subregion": "MINERAL FUELS",
+        "value": 6367.54
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2013,
+        "subregion": "MINERAL FUELS",
+        "value": 5877.28
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2013,
+        "subregion": "MINERAL FUELS",
+        "value": 4364.22
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2013,
+        "subregion": "MINERAL FUELS",
+        "value": 2855.69
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2013,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140.21
+    },
+    {
+        "key": "U S A",
+        "region": 2013,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2013,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2013,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2013,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2013,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2013,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2013,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2013,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2013,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2013,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2013,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2012,
+        "subregion": "MINERAL FUELS",
+        "value": 6367.54
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2012,
+        "subregion": "MINERAL FUELS",
+        "value": 5877.28
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2012,
+        "subregion": "MINERAL FUELS",
+        "value": 4364.22
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2012,
+        "subregion": "MINERAL FUELS",
+        "value": 2855.69
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2012,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140.21
+    },
+    {
+        "key": "U S A",
+        "region": 2012,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2012,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2012,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2012,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2012,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2012,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2012,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2012,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2012,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2012,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2012,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2011,
+        "subregion": "MINERAL FUELS",
+        "value": 6367.54
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2011,
+        "subregion": "MINERAL FUELS",
+        "value": 5877.28
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2011,
+        "subregion": "MINERAL FUELS",
+        "value": 4364.22
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2011,
+        "subregion": "MINERAL FUELS",
+        "value": 2855.69
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2011,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140.21
+    },
+    {
+        "key": "U S A",
+        "region": 2011,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2011,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2011,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2011,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2011,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2011,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2011,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2011,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2011,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2011,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2011,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2010,
+        "subregion": "MINERAL FUELS",
+        "value": 6367.54
+    },
+    {
+        "key": "SINGAPORE",
+        "region": 2010,
+        "subregion": "MINERAL FUELS",
+        "value": 5877.28
+    },
+    {
+        "key": "NETHERLAND",
+        "region": 2010,
+        "subregion": "MINERAL FUELS",
+        "value": 4364.22
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2010,
+        "subregion": "MINERAL FUELS",
+        "value": 2855.69
+    },
+    {
+        "key": "HONG KONG",
+        "region": 2010,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 11140.21
+    },
+    {
+        "key": "U S A",
+        "region": 2010,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10442.27
+    },
+    {
+        "key": "U ARAB EMTS",
+        "region": 2010,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 10418.15
+    },
+    {
+        "key": "BELGIUM",
+        "region": 2010,
+        "subregion": "NATURAL OR CULTURED PEARLS",
+        "value": 2475.7
+    },
+    {
+        "key": "U S A",
+        "region": 2010,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 4026.34
+    },
+    {
+        "key": "GERMANY",
+        "region": 2010,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1430.85
+    },
+    {
+        "key": "U K",
+        "region": 2010,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 1063.26
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2010,
+        "subregion": "NUCLEAR REACTORS",
+        "value": 830.88
+    },
+    {
+        "key": "CHINA P RP",
+        "region": 2010,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 3249.21
+    },
+    {
+        "key": "U S A",
+        "region": 2010,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 1843.41
+    },
+    {
+        "key": "GERMANY",
+        "region": 2010,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 723.9
+    },
+    {
+        "key": "INDONESIA",
+        "region": 2010,
+        "subregion": "ORGANIC CHEMICALS",
+        "value": 629.71
+    }
+]

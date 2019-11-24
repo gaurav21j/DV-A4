@@ -71,12 +71,22 @@
             cursor: pointer;
         }
 
+        .custom-select select {
+            background-color: #4CAF50;
+            height: 40px;
+            color: white;
+            text-align: center;
+            font-family: Lato;
+            font-size: 110%;
+            padding-left: 1%;
+        }
+
         p {
             font-family: Lato;
             margin-left: 5%;
             margin-right: 5%;
             text-align: justify;
-            font-size: 120%;
+            font-size: 110%;
         }
 
         h2 {
@@ -119,17 +129,19 @@
     </div>
 
     <div>
-        <h2>Sunburst Analysis</h2>
-        <p>The Sunburst chart will be plotted for top 4 most-imported/exported commodity over years. </p>
-        <p>
-            <select id="file">
-                <option id="file" value="0">Select Bar Graph:</option>
-                <option id="file" value="1">Most Exported Commodity Over Years</option>
-                <option id="file" value="2">Most Imported Commodity Over Years</option>
-            </select>
-            <button class="button" onclick="hello()">Submit</button>
-        </p>
-
+        <p style="margin-left: 1%; font-size: 160%;">Sunburst Analysis</p>
+        <p style="margin-left: 1%; margin-top: -0.7%;">The Sunburst chart will be plotted for top 4
+            most-imported/exported commodity over years. </p>
+        <div class="custom-select" style="margin-left: -4%; font-size: 100%;">
+            <p>
+                <select id="file">
+                    <option id="file" value="0">Select Bar Graph:</option>
+                    <option id="file" value="1">Most Exported Commodity Over Years</option>
+                    <option id="file" value="2">Most Imported Commodity Over Years</option>
+                </select>
+                <button class="button" onclick="hello()">Submit</button>
+            </p>
+        </div>
 
     </div>
     <div>

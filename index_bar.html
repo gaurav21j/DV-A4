@@ -40,6 +40,16 @@
     margin: 8px 0;
     box-sizing: border-box;
   }
+  
+  .custom-select select {
+      background-color: #4CAF50;
+      height: 40px;
+      color: white;
+      text-align: center;
+      font-family: Lato;
+      font-size: 110%;
+      padding-left: 1%;
+    }
 
   .button {
     background-color: #4CAF50;
@@ -53,6 +63,12 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+  }
+
+  #num {
+    width: 150px;
+    height: 10px;
+    margin-top: -1%;
   }
 
   p {
@@ -102,11 +118,14 @@
   </div>
 
   <div>
-    <h2>Bar Graph Analysis</h2>
-    <p>Enter Number "N" and get Top or Bottom-N import/export:
-      <input type="text" id="num" name="num">
+    <p style="margin-left: 1%;"><span style="font-size: 160%;">Dynamic Bar Graph Analysis</span><br>
+      Enter the value of n to get top or bottom-N imported/exported countries by India:      
+        <input type="text" id="num" name="num">
     </p>
+    <div>
+    <div class='custom-select' style="margin-left: -4%; margin-top: -1%;">
     <p>
+
       <select id="file">
         <option id="file" value="0">Select Bar Graph:</option>
         <option id="file" value="1">Top N-Imports</option>
@@ -116,7 +135,8 @@
       </select>
       <button class="button" onclick="hello()">Submit</button>
     </p>
-
+  </div>
+</div>
   </div>
   <div>
 

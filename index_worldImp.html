@@ -34,6 +34,16 @@
       stroke-linejoin: round;
     }
 
+    .custom-select select {
+            background-color: #4CAF50;
+            height: 40px;
+            color: white;
+            text-align: center;
+            font-family: Lato;
+            font-size: 110%;
+            padding-left: 1%;
+        }
+
     /* Tooltip CSS */
     .d3-tip {
       line-height: 1.5;
@@ -122,13 +132,16 @@
     </nav>
 </div>
   <p>
-    <h1>India's Import Insights Across World [2010-2018] </h1>
-    <select id="drovalueBox">
-        <option selected value="base">Please Select Commodity</option>
-    </select>
-  </p>
-  <div id="div"></div>
-  <div id="my_dataviz"></div>
+    <p style="font-size: 150%; margin-left: 1%;">India's Import Insights Across World [2010-2018] </p>
+      </p>
+      <div class="custom-select" style="margin-left: 1%; margin-bottom: 1%;">
+          <select id="drovalueBox">
+              <option selected value="base">Please Select Commodity</option>
+          </select>
+      
+      </div>
+  <div id="div" style="margin-left: 1%; margin-bottom: 1%;"></div>
+  <div id="my_dataviz" style="margin-left: 1%; margin-bottom: 2%;"></div>
   <script>
       $.get(('dataset/value.txt'),
         function(data) {

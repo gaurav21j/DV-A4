@@ -394,6 +394,7 @@ Generic treemap, based on http://bost.ocks.org/mike/treemap/
         if (!err) {
           console.log(res);
           var data = d3.nest().key(function (d) { return d.region; }).key(function (d) { return d.subregion.split(',')[0]; }).entries(res);
+          console.log(data)
           main({ title: "" }, { key: "Yearly Distributed Data", values: data });
         }
       });

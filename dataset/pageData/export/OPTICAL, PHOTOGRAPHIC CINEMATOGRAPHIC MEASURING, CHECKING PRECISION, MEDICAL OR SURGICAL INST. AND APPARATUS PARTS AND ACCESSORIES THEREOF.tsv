@@ -1,0 +1,221 @@
+id	name	population
+AFG	Afghanistan	45.85000000000001
+ALB	Albania	4.28
+DZA	Algeria	69.84
+202	American Samoa	0.05
+198	Andorra	0.01
+AGO	Angola	22.240000000000002
+221	Anguilla	0.49
+197	Antigua and Barbuda	0.10999999999999999
+ARG	Argentina	69.11999999999999
+ARM	Armenia	2.25
+192	Aruba	2.6599999999999997
+AUS	Australia	382.56
+AUT	Austria	56.37
+AZE	Azerbaijan	4.78
+BHS	Bahamas, The	0.17
+163	Bahrain	24.950000000000003
+BGD	Bangladesh	332.01
+180	Barbados	0.41000000000000003
+BLR	Belarus	11.21
+BEL	Belgium	176.64
+BLZ	Belize	1.3500000000000003
+BEN	Benin	5.03
+201	Bermuda	0.9600000000000001
+BTN	Bhutan	17.740000000000002
+BOL	Bolivia	10.25
+BIH	Bosnia and Herzegovina	4.42
+BWA	Botswana	6.91
+215	British Virgin Islands	0.01
+BRA	Brazil	384.41
+BRN	Brunei	5.99
+BGR	Bulgaria	24.96
+BFA	Burkina Faso	8.95
+BDI	Burundi	5.79
+CAF	Central African Republic	0.55
+KHM	Cambodia	9.149999999999999
+CMR	Cameroon	10.29
+CAN	Canada	107.13000000000001
+169	Cape Verde	0.11
+206	Cayman Islands	6.289999999999999
+TCD	Chad	3.2
+CHL	Chile	31.830000000000002
+CHN	China	1191.43
+COL	Colombia	61.38
+160	Comoros	0.33000000000000007
+COD	Congo, Democratic Republic of the	14.11
+COG	Congo, Republic of the	18.16
+223	Cook Islands	0.0
+CRI	Costa Rica	19.080000000000002
+CIV	Cote d'Ivoire	12.179999999999996
+HRV	Croatia	9.850000000000001
+CUB	Cuba	14.08
+CYP	Cyprus	7.299999999999999
+CZE	Czech Republic	38.23
+DNK	Denmark	74.85999999999999
+DJI	Djibouti	11.55
+DOM	Dominican Republic	19.480000000000004
+DOM	Dominica	0.53
+ECU	Ecuador	38.68
+EGY	Egypt	154.02000000000004
+SLV	El Salvador	7.54
+GNQ	Equatorial Guinea	0.31
+ERI	Eritrea	2.21
+EST	Estonia	11.249999999999998
+ETH	Ethiopia	104.4
+208	Faroe Islands	0.0
+FJI	Fiji	6.42
+FIN	Finland	49.879999999999995
+179	French Polynesia	0.04
+FRA	France	1066.73
+GAB	Gabon	2.77
+GMB	Gambia, The	1.7300000000000002
+GEO	Georgia	14.1
+DEU	Germany	1418.77
+GHA	Ghana	64.52
+214	Gibraltar	0.05
+GRC	Greece	37.010000000000005
+190	Grenada	0.05
+GTM	Guatemala	16.97
+GIN	Guinea	7.26
+GNB	Guinea-Bissau	0.7100000000000001
+GUY	Guyana	5.46
+HTI	Haiti	1.54
+HND	Honduras	9.959999999999999
+HKG	Hong Kong	212.01999999999998
+HUN	Hungary	38.9
+ISL	Iceland	5.73
+IDN	Indonesia	215.31999999999996
+IRN	Iran	149.41
+IRQ	Iraq	55.84
+IRL	Ireland	93.2
+ISR	Israel	306.99000000000007
+ITA	Italy	259.15999999999997
+JAM	Jamaica	3.9000000000000004
+JPN	Japan	403.83
+JOR	Jordan	40.38
+KAZ	Kazakhstan	28.51
+KEN	Kenya	150.66
+194	Kiribati	0.05
+PRK	Korea, North	16.580000000000002
+KOR	Korea, South	415.07
+KWT	Kuwait	65.38000000000001
+KGZ	Kyrgyzstan	4.17
+LAO	Laos	2.91
+LVA	Latvia	5.69
+LBN	Lebanon	15.4
+LSO	Lesotho	1.0500000000000003
+LBR	Liberia	4.56
+LBY	Libya	12.9
+210	Liechtenstein	0.06999999999999999
+LTU	Lithuania	10.58
+LUX	Luxembourg	8.879999999999999
+168	Macau	0.7100000000000001
+MKD	Macedonia	2.05
+MDG	Madagascar	6.700000000000001
+MWI	Malawi	20.94
+MYS	Malaysia	462.91
+174	Maldives	32.78
+MLI	Mali	8.850000000000001
+173	Malta	2.08
+203	Marshall Islands	0.02
+MRT	Mauritania	2.6
+153	Mauritius	22.919999999999998
+181	Mayotte	0.0
+MEX	Mexico	131.60999999999999
+191	Micronesia, Federated States of	0.03
+MDA	Moldova	2.2300000000000004
+212	Monaco	0.0
+MNG	Mongolia	3.44
+MNE	Montenegro	0.5900000000000001
+MAR	Morocco	59.71999999999999
+MOZ	Mozambique	38.410000000000004
+NAM	Namibia	3.85
+222	Nauru	0.04
+NPL	Nepal	191.26
+NLD	Netherlands	338.72
+183	Netherlands Antilles	0.5800000000000001
+NCL	New Caledonia	0.62
+NZL	New Zealand	9.01
+NIC	Nicaragua	10.72
+NER	Niger	4.52
+NGA	Nigeria	214.57999999999998
+209	Northern Mariana Islands	28.079999999999995
+NOR	Norway	130.86
+PAK	Pakistan	39.26
+217	Palau	0.01
+PNG	Papua New Guinea	21.02
+PRY	Paraguay	8.32
+PER	Peru	45.17000000000001
+PHL	Philippines	128.78
+POL	Poland	233.45000000000002
+PRT	Portugal	32.43
+PRI	Puerto Rico	6.660000000000001
+QAT	Qatar	56.81999999999999
+ROU	Romania	32.6
+RUS	Russia	164.04
+RWA	Rwanda	19.769999999999996
+ESH	Western Sahara	0.0
+185	Samoa	0.27
+211	San Marino	0.0
+186	Sao Tome and Principe	0.02
+SAU	Saudi Arabia	291.31
+SEN	Senegal	19.999999999999996
+SRB	Serbia	5.190000000000001
+196	Seychelles	4.509999999999999
+SLE	Sierra Leone	8.989999999999998
+SGP	Singapore	1727.7199999999998
+SVK	Slovakia	14.31
+SVN	Slovenia	4.67
+SLB	Solomon Islands	0.5600000000000002
+SOM	Somalia	5.029999999999999
+ZAF	South Africa	244.41000000000003
+SDS	South Sudan	0.09
+ESP	Spain	119.71999999999998
+LKA	Sri Lanka	211.61
+207	Saint Kitts and Nevis	0.08
+187	Saint Lucia	0.27
+227	Saint Pierre and Miquelon	0.0
+193	Saint Vincent and the Grenadines	0.02
+SDN	Sudan	72.86
+SUR	Suriname	0.9600000000000001
+SWZ	Swaziland	4.5600000000000005
+SWE	Sweden	89.80000000000001
+CHE	Switzerland	177.56
+SYR	Syria	24.1
+TWN	Taiwan	63.32
+TJK	Tajikistan	2.1699999999999995
+TZA	Tanzania	82.66000000000001
+THA	Thailand	294.55
+TLS	Timor-Leste	4.82
+TGO	Togo	4.16
+188	Tonga	0.09999999999999999
+TTO	Trinidad and Tobago	13.019999999999998
+TUN	Tunisia	23.13
+TUR	Turkey	267.32000000000005
+TKM	Turkmenistan	4.7299999999999995
+216	Turks and Caicos Islands	0.76
+ARE	United Arab Emirates	710.0999999999999
+GBR	United Kingdom	1389.21
+USA	United States	3471.4900000000007
+UGA	Uganda	50.650000000000006
+UKR	Ukraine	33.589999999999996
+URY	Uruguay	7.2700000000000005
+UZB	Uzbekistan	39.18
+VUT	Vanuatu	0.39
+VEN	Venezuela	37.21
+VNM	Vietnam	163.01000000000002
+YEM	Yemen	46.44999999999999
+ZMB	Zambia	32.730000000000004
+ZWE	Zimbabwe	21.93
+228	Montserrat	0.04
+230	Norfolk Island	0.0
+224	Tuvalu	0.0
+220	Wallis and Futuna	0.0
+GRL	Greenland	0.01
+189	Virgin Islands	0.1
+233	Tokelau	0.19
+ATA	Antarctica	0.13
+FLK	Falkland Islands (Islas Malvinas)	0.0
+232	Christmas Island	0.0
+PAN	Panama	0.0

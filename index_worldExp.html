@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Linked Plugins -->
+  <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="animatescroll.js"></script>
+
+  <!-- Linked CSS files -->
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="bootstrapcss.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Linked Fonts -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:300'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js'></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <style>
+    .names {
+      fill: none;
+      stroke: #fff;
+      stroke-linejoin: round;
+    }
+
+    /* Tooltip CSS */
+    .d3-tip {
+      line-height: 1.5;
+      font-weight: 400;
+      font-family: "avenir next", Arial, sans-serif;
+      padding: 6px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #FFA500;
+      border-radius: 1px;
+      pointer-events: none;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 8px;
+      width: 100%;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      pointer-events: none;
+
+    }
+
+    /* Northward tooltips */
+    .d3-tip.n:after {
+      content: "\25BC";
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+      text-align: center;
+    }
+
+    /* Eastward tooltips */
+    .d3-tip.e:after {
+      content: "\25C0";
+      margin: -4px 0 0 0;
+      top: 50%;
+      left: -8px;
+    }
+
+    /* Southward tooltips */
+    .d3-tip.s:after {
+      content: "\25B2";
+      margin: 0 0 1px 0;
+      top: -8px;
+      left: 0;
+      text-align: center;
+    }
+
+    /* Westward tooltips */
+    .d3-tip.w:after {
+      content: "\25B6";
+      margin: -4px 0 0 -1px;
+      top: 50%;
+      left: 100%;
+    }
+
+    .details {
+      color: white;
+    }
+
+    #div,
+    #my_dataviz {
+      border: 5px solid gray;
+      width: 960px;
+    }
+
+    p,
+    h2 {
+      font-family: Lato;
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: justify;
+      font-size: 120%;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="margin-bottom: 5%;">
+    <!--Navbar Large-->
+    <nav id="navlarge" class="navbar navbar-inverse navbar-fixed-top w3-hide-small w3-hide-medium w3-card-4"
+      style="background-color:#202020;">
+      <div class="container-fluid">
+        <!--Icon-->
+        <div class="navbar-header" style="margin-top: 5px;">
+          <a class="navbar-brand" href="index.html"><span class="xyz" style="margin-top: 5%;">India | Trade Data
+              Exploration</span></a>
+          <!--<a class="navbar-brand" href="#section3"><h2 style="font-family:Montserrat;margin-top:-0.1%;display:inline-block;color:#fff;">GAJANAND MARBLES</h2></a>-->
+        </div>
+
+      </div>
+    </nav>
+  </div>
+  <p>
+    <h1>India's Export Insights Across World [2010-2018] </h1>
+    <select id="drovaluepBox">
+      <option selected value="base">Please Select Commodity</option>
+    </select>
+  </p>
+  <div id="div"></div>
+  <div id="my_dataviz"></div>
+  <script>
+    $.get(('dataset/value.txt'),
+      function (data) {
+        //console.log(data); /* Open the console too see the data */
+        var options = data.split('\n'),
+          /* Something to "explode" by. See link. */
+          $select = $('select#drovaluepBox');
+        for (var i = 0; i < options.length; i++) {
+          $select.append('<option value="' + options[i] + '">' + options[i] + '</option>"');
+        }
+      }, "text");
+  </script>
+  <script lang='babel' type='text/babel'>
+    $(function () {
+      $("#drovaluepBox").on("change", function () {
+        //d3.selectAll("svg > *").remove();
+        document.getElementById("div").innerHTML = '';
+        document.getElementById("my_dataviz").innerHTML = '<h2>Commodity export trend over the years: </h2>';
+        var fname = document.getElementById("drovaluepBox").value;
+
+        const format = d3.format(',');
+
+        // Set tooltips
+        const tip = d3.tip()
+          .attr('class', 'd3-tip')
+          .offset([-10, 0])
+          .html(function (d) {
+            var val;
+            if (isNaN(d.population)) val = 0;
+            else val = format(d.population);
+            return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" +
+              "<strong>Population: </strong><span class='details'>" + val + " million US$</span>";
+          });
+
+        //const margin = {top: 0, right: 0, bottom: 0, left: 0};
+        const width = 960;//- margin.left - margin.right;
+        const height = 500;//- margin.top - margin.bottom;
+
+        var color = d3.scaleThreshold()
+          .domain([0, 100, 500, 1000, 500, 10000, 20000, 25000, 50000, 100000])
+          .range(["rgb(247,251,255)", "rgb(222,235,247)", "rgb(198,219,239)", "rgb(158,202,225)", "rgb(107,174,214)", "rgb(66,146,198)", "rgb(33,113,181)", "rgb(8,81,156)", "rgb(8,48,107)", "rgb(3,19,43)"]);
+
+        const svg = d3.select('#div')
+          .append('svg')
+          .attr('width', width)
+          .attr('height', height)
+          .append('g')
+          .attr('class', 'map');
+
+        const projection = d3.geoRobinson()
+          .scale(148)
+          .rotate([352, 0, 0])
+          .translate([width / 2, height / 2]);
+
+        const path = d3.geoPath().projection(projection);
+
+        svg.call(tip);
+
+        Promise.all([
+          d3.json('dataset/world.json'),
+          d3.tsv('dataset/pageData/export/' + fname + '.tsv')
+        ]).then(
+          d => ready(null, d[0], d[1])
+        );
+
+        function ready(error, data, population) {
+          const populationById = {};
+
+          population.forEach(d => { populationById[d.id] = +d.population; });
+          data.features.forEach(d => { d.population = populationById[d.id] });
+
+          svg.append('g')
+            .attr('class', 'countries')
+            .selectAll('path')
+            .data(data.features)
+            .enter().append('path')
+            .attr('d', path)
+            .style('fill', d => color(populationById[d.id]))
+            .style('stroke', 'white')
+            .style('opacity', 0.8)
+            .style('stroke-width', 0.3)
+            // tooltips
+            .on('mouseover', function (d) {
+              tip.show(d);
+              d3.select(this)
+                .style('opacity', 1)
+                .style('stroke-width', 3);
+            })
+            .on('mouseout', function (d) {
+              tip.hide(d);
+              d3.select(this)
+                .style('opacity', 0.8)
+                .style('stroke-width', 0.3);
+            });
+
+          svg.append('path')
+            .datum(topojson.mesh(data.features, (a, b) => a.id !== b.id))
+            .attr('class', 'names')
+            .attr('d', path);
+        };
+
+        // For Line Chart
+        var margin = { top: 10, right: 30, bottom: 60, left: 150 },
+          width2 = 460 - margin.left - margin.right,
+          height2 = 400 - margin.top - margin.bottom;
+
+        // append the svg object to the body of the page
+        var svg2 = d3.select("#my_dataviz")
+          .append("svg")
+          .attr("width", width2 + margin.left + margin.right)
+          .attr("height", height2 + margin.top + margin.bottom)
+          .append("g")
+          .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+
+        d3.csv("dataset/pageData/lineExport/" + fname + '.csv').then(
+          // Now I can use this dataset:
+          function (data) {
+            // Add X axis --> it is a date format
+            var x = d3.scaleTime()
+              .domain(d3.extent(data, function (d) { return d3.timeParse("%Y")(d.data); }))
+              .range([0, width2]);
+            svg2.append("g")
+              .attr("transform", "translate(0," + height2 + ")")
+              .call(d3.axisBottom(x));
+
+            // Add Y axis
+            var y = d3.scaleLinear()
+              .domain([0, d3.max(data, function (d) { return +d.value; })])
+              .range([height2, 0]);
+            svg2.append("g")
+              .call(d3.axisLeft(y));
+            // Add the line
+            svg2.append("path")
+              .datum(data)
+              .attr("fill", "none")
+              .attr("stroke", "steelblue")
+              .attr("stroke-width", 1.5)
+              .attr("d", d3.line()
+                .x(function (d) { return x(d3.timeParse("%Y")(d.data)) })
+                .y(function (d) { return y(d.value) })
+              );
+            //This is the x label
+            svg2.append("text")
+              .attr("x", 0 - margin.left / 2 + 60)
+              .attr("y", height2 - 40)
+              .style("text-anchor", "middle")
+              .attr("transform", "translate(" + width2 / 2 + ",80)")
+              .text("Year");
+
+            //This is the y label
+            svg2.append("text")
+              .attr("transform", "rotate(-90)")
+              .attr("y", 0 - margin.left / 2)
+              .attr("x", 0 - (height2 / 2))
+              .attr("dy", "1em")
+              .style("text-anchor", "middle")
+              .text("Value in US.Million $");
+          })
+      });
+
+    });
+  </script>
+</body>
+
+</html>

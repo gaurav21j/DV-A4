@@ -3,28 +3,28 @@
 
 <link rel="stylesheet" type="text/css" href="styles.css">
 
-		<!-- Favicon -->
-		<link rel="icon" href="gaj2.png">
-		
-		<!-- Linked Plugins -->
-		<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="animatescroll.js"></script>
-				
-		<!-- Linked CSS files -->
-		<link rel="stylesheet" href="w3.css">
-		<link rel="stylesheet" href="bootstrapcss.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		
-		<!-- Linked Fonts -->
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400'>
-		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:300'>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-		
+<!-- Favicon -->
+<link rel="icon" href="gaj2.png">
+
+<!-- Linked Plugins -->
+<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="animatescroll.js"></script>
+
+<!-- Linked CSS files -->
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="bootstrapcss.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Linked Fonts -->
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:300'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
 <style>
   /* set the CSS */
 
@@ -34,7 +34,8 @@
 </style>
 <style>
   input[type=text] {
-    width: 100%;
+    width: 10%;
+    height: 2%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -54,14 +55,29 @@
     cursor: pointer;
   }
 
-  p, h2{
-				font-family:Lato; margin-left:5%; margin-right:5%; text-align: justify;
-				font-size: 120%;
-			}	
-			html, body { height: 100%; width: 100%; margin: 0; 
-        background-color:#fff;
-        left: 5%;
-			}
+  p {
+    font-family: Lato;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-size: 120%;
+  }
+
+  h2 {
+    font-family: Lato;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    left: 5%;
+  }
 </style>
 
 <body>
@@ -70,29 +86,27 @@
   <script src="d3/d3.v4.min.js"></script>
 
   <div style="margin-bottom: 5%;">
-      <!--Navbar Large-->
-<nav id="navlarge" class="navbar navbar-inverse navbar-fixed-top w3-hide-small w3-hide-medium w3-card-4" style="background-color:#202020;">
-    <div class="container-fluid">
-      <!--Icon-->
-      <div class="navbar-header" style="margin-top: 5px;">
-        <a class="navbar-brand" href="index.html"><span class="xyz" style="margin-top: 5%;">India | Trade Data Exploration</span></a>
-        <!--<a class="navbar-brand" href="#section3"><h2 style="font-family:Montserrat;margin-top:-0.1%;display:inline-block;color:#fff;">GAJANAND MARBLES</h2></a>-->
+    <!--Navbar Large-->
+    <nav id="navlarge" class="navbar navbar-inverse navbar-fixed-top w3-hide-small w3-hide-medium w3-card-4"
+      style="background-color:#202020;">
+      <div class="container-fluid">
+        <!--Icon-->
+        <div class="navbar-header" style="margin-top: 5px;">
+          <a class="navbar-brand" href="index.html"><span class="xyz" style="margin-top: 5%;">India | Trade Data
+              Exploration</span></a>
+          <!--<a class="navbar-brand" href="#section3"><h2 style="font-family:Montserrat;margin-top:-0.1%;display:inline-block;color:#fff;">GAJANAND MARBLES</h2></a>-->
+        </div>
+
       </div>
-      
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 
   <div>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-      of Lorem Ipsum.</p>
-    <input type="text" id="num" name="num">
-    <button class="button" onclick="hello()">Submit</button>
-    <div class="custom-select" style="width:200px;">
+    <h2>Bar Graph Analysis</h2>
+    <p>Enter Number "N" and get Top or Bottom-N import/export:
+      <input type="text" id="num" name="num">
+    </p>
+    <p>
       <select id="file">
         <option id="file" value="0">Select Bar Graph:</option>
         <option id="file" value="1">Top N-Imports</option>
@@ -100,8 +114,8 @@
         <option id="file" value="3">Bottom N-Imports</option>
         <option id="file" value="4">Bottom N-Exports</option>
       </select>
-    </div>
-
+      <button class="button" onclick="hello()">Submit</button>
+    </p>
 
   </div>
   <div>
@@ -122,9 +136,9 @@
 
         var num = document.getElementById('num').value;
         // set the dimensions and margins of the graph
-        var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+        var margin = { top: 20, right: 20, bottom: 30, left: 150},
           width = 960 - margin.left - margin.right,
-          height = 500 - margin.top - margin.bottom;
+          height = 400 - margin.top - margin.bottom;
 
         // set the ranges
         var x = d3.scaleBand()
@@ -138,7 +152,7 @@
         // moves the 'group' element to the top left margin
         var svg = d3.select("body").append("svg")
           .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
+          .attr("height", height + margin.top + 2*margin.bottom)
           .append("g")
           .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
@@ -191,7 +205,7 @@
                 .style("left", d3.event.pageX - 50 + "px")
                 .style("top", d3.event.pageY - 70 + "px")
                 .style("display", "inline-block")
-                .html((d.country) + "<br>" + "$" + (d.total_imports));
+                .html((d.country) + "<br>" + "$" + (d.total_imports) + "US.Million");
             })
             .on("mouseout", function (d) { tooltip.style("display", "none"); });
 
@@ -204,12 +218,28 @@
             .style("text-anchor", "end")
             .attr("dx", "-.8em")
             .attr("dy", "-.55em")
-            .attr("transform", "rotate(-65)");
-
+            .attr("transform", "rotate(-45)");
 
           // add the y Axis
           svg.append("g")
             .call(d3.axisLeft(y));
+          
+          //This is the x label
+        svg.append("text")
+            .attr("x", 0)
+            .attr("y", 400)
+            .style("text-anchor", "middle")
+            .attr("transform", "translate(" + width/2 + ",80)")
+            .text("Countries"); 
+
+        //This is the y label
+        svg.append("text")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 0 - margin.left/2)
+          .attr("x",0 - (height / 2))
+          .attr("dy", "1em")
+          .style("text-anchor", "middle")
+          .text("Value in US.Million");
 
         });
 

@@ -1,0 +1,167 @@
+id	name	population
+AGO	Angola	5.92
+AUS	Australia	61.43
+AUT	Austria	60.03
+AZE	Azerbaijan	0.0
+163	Bahrain	9.01
+BGD	Bangladesh	2.37
+BLR	Belarus	0.6100000000000001
+BEL	Belgium	172.43999999999997
+BLZ	Belize	0.32999999999999996
+BEN	Benin	267.44
+BTN	Bhutan	30.419999999999998
+BOL	Bolivia	1.59
+BIH	Bosnia and Herzegovina	22.84
+BRA	Brazil	490.43
+BRN	Brunei	0.06999999999999999
+BGR	Bulgaria	1.8
+CAF	Central African Republic	9.01
+KHM	Cambodia	39.989999999999995
+CMR	Cameroon	180.54
+CAN	Canada	81.45000000000002
+206	Cayman Islands	0.17
+CHL	Chile	8.56
+CHN	China	1105.81
+COL	Colombia	95.06
+COD	Congo, Democratic Republic of the	2.9399999999999995
+COG	Congo, Republic of the	100.62
+CRI	Costa Rica	452.53999999999996
+CIV	Cote d'Ivoire	294.55
+HRV	Croatia	6.84
+CZE	Czech Republic	8.07
+DNK	Denmark	19.58
+DOM	Dominican Republic	0.38
+DOM	Dominica	0.06
+ECU	Ecuador	550.6799999999998
+EGY	Egypt	0.06999999999999999
+SLV	El Salvador	42.97
+GNQ	Equatorial Guinea	2.1500000000000004
+EST	Estonia	39.28000000000001
+FJI	Fiji	0.06
+FIN	Finland	12.190000000000001
+FRA	France	40.19
+GAB	Gabon	171.79
+DEU	Germany	663.14
+GHA	Ghana	491.02
+GRC	Greece	0.47000000000000003
+GTM	Guatemala	32.02
+GIN	Guinea	4.970000000000001
+GUY	Guyana	78.7
+HND	Honduras	5.050000000000001
+HKG	Hong Kong	12.7
+HUN	Hungary	0.33
+IDN	Indonesia	697.6400000000001
+IRN	Iran	0.19999999999999998
+IRL	Ireland	4.22
+ISR	Israel	0.15
+ITA	Italy	110.46000000000001
+JPN	Japan	7.81
+JOR	Jordan	0.0
+KEN	Kenya	16.650000000000002
+KOR	Korea, South	14.379999999999999
+KWT	Kuwait	0.26
+LAO	Laos	83.01000000000002
+LVA	Latvia	20.03
+LBR	Liberia	25.660000000000004
+LTU	Lithuania	17.750000000000004
+MDG	Madagascar	1.32
+MWI	Malawi	0.35000000000000003
+MYS	Malaysia	4775.59
+MLI	Mali	0.01
+153	Mauritius	0.18000000000000002
+MEX	Mexico	7.010000000000001
+212	Monaco	1.09
+MAR	Morocco	0.37
+MOZ	Mozambique	3.44
+NPL	Nepal	9.47
+NLD	Netherlands	9.18
+NZL	New Zealand	2043.6899999999998
+NIC	Nicaragua	10.709999999999997
+NER	Niger	0.04
+NGA	Nigeria	117.01
+209	Northern Mariana Islands	0.63
+NOR	Norway	5.010000000000001
+PNG	Papua New Guinea	669.37
+PRY	Paraguay	0.15
+PER	Peru	0.8
+PHL	Philippines	24.330000000000002
+POL	Poland	20.59
+PRT	Portugal	8.600000000000001
+QAT	Qatar	0.28
+ROU	Romania	38.96
+RUS	Russia	88.05
+SAU	Saudi Arabia	1.19
+SRB	Serbia	0.51
+SLE	Sierra Leone	0.02
+SGP	Singapore	102.84
+SVK	Slovakia	4.08
+SVN	Slovenia	12.679999999999998
+SLB	Solomon Islands	300.7100000000001
+ZAF	South Africa	206.82
+SDS	South Sudan	22.759999999999998
+ESP	Spain	43.06
+LKA	Sri Lanka	86.31
+225	Saint Helena, Ascension, and Tristan da Cunha	0.0
+SDN	Sudan	127.92
+SUR	Suriname	305.21
+SWZ	Swaziland	0.67
+SWE	Sweden	82.87
+CHE	Switzerland	8.84
+TWN	Taiwan	15.260000000000002
+TZA	Tanzania	159.05999999999997
+THA	Thailand	380.9
+TGO	Togo	106.46
+TTO	Trinidad and Tobago	10.98
+TUR	Turkey	23.15
+ARE	United Arab Emirates	32.7
+GBR	United Kingdom	92.01
+USA	United States	382.90999999999997
+UGA	Uganda	32.78000000000001
+UKR	Ukraine	83.17
+URY	Uruguay	21.27
+VEN	Venezuela	1.85
+VNM	Vietnam	436.27
+ZWE	Zimbabwe	0.15000000000000002
+ARG	Argentina	0.81
+GMB	Gambia, The	0.05
+LUX	Luxembourg	0.18
+174	Maldives	0.33999999999999997
+PAK	Pakistan	1.66
+TUN	Tunisia	0.04
+YEM	Yemen	0.02
+ATA	Antarctica	0.0
+BDI	Burundi	0.04
+CYP	Cyprus	0.48000000000000004
+KAZ	Kazakhstan	0.0
+MKD	Macedonia	0.10999999999999999
+230	Norfolk Island	0.04
+VUT	Vanuatu	0.03
+ZMB	Zambia	0.08
+AFG	Afghanistan	0.0
+CUB	Cuba	0.01
+GEO	Georgia	0.060000000000000005
+IRQ	Iraq	0.0
+PRK	Korea, North	0.02
+183	Netherlands Antilles	0.02
+189	Virgin Islands	0.11000000000000001
+207	Saint Kitts and Nevis	0.0
+SYR	Syria	0.16
+TLS	Timor-Leste	0.0
+TCD	Chad	0.65
+GRL	Greenland	0.05
+LBN	Lebanon	0.04
+NCL	New Caledonia	0.2
+PRI	Puerto Rico	0.8200000000000001
+196	Seychelles	0.0
+UZB	Uzbekistan	0.0
+197	Antigua and Barbuda	0.0
+BHS	Bahamas, The	0.09000000000000001
+173	Malta	1.03
+SEN	Senegal	0.16999999999999998
+201	Bermuda	0.0
+GNB	Guinea-Bissau	0.03
+ISL	Iceland	0.01
+LBY	Libya	0.07
+NAM	Namibia	0.02
+MNG	Mongolia	0.0
+TJK	Tajikistan	0.0
